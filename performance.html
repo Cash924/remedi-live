@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remedi • Live Performances</title>
+
+  <!-- your existing CSS + Swiper -->
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body id="top">
+
+  <!-- Reuse your header -->
+  <header class="s-header">
+    <div class="row s-header__inner">
+      <div class="s-header__block">
+        <div class="s-header__logo">
+          <a class="logo" href="index.html"><img src="images/logo.svg" alt="Remedi"></a>
+        </div>
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+      </div>
+      <nav class="s-header__nav">
+        <ul class="s-header__menu-links">
+          <li><a href="index.html#intro">Intro</a></li>
+          <li class="current"><a href="performances.html">Live</a></li>
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="index.html#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Intro -->
+  <section id="perf-hero" class="s-intro target-section">
+    <div class="row s-intro__content width-sixteen-col">
+      <div class="column lg-6 s-intro__content-text">
+        <div class="s-intro__content-pretitle text-pretitle">Experience</div>
+        <h1 class="s-intro__content-title">
+          Remedi Live
+        </h1>
+       <p class="attention-getter">
+  Feel the energy of Remedi’s stage presence—Neo-Soul meets hip-hop,<br>
+  right here in Vegas.
+</p>
+
+        <a class="btn btn--primary" href="#video-highlights">Watch Highlights</a>
+      </div>
+      <div class="column lg-6 s-intro__content-media">
+        <img src="/images/mainPicSeven.JPG" alt="Remedi performing on stage">
+      </div>
+    </div>
+  </section>
+  <!-- Video Highlights Carousel -->
+<!-- Step 1: Clean Up Your Swiper HTML Markup -->
+<section id="video-highlights" class="target-section">
+  <div class="row">
+    <div class="column xl-12">
+      <div class="section-header" data-num="01">
+        <h2 class="text-display-title">Video Highlights</h2>
+      </div>
+
+      <div class="swiper highlights-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1: Gala Edit Vid first -->
+          <div class="swiper-slide">
+            <div class="video-wrapper">
+              <video controls>
+                <source src="/images/performances/galaEditVid.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">“Gala Highlight Performance”</p>
+          </div>
+
+          <!-- Slide 2: Mother's Day Tribute second -->
+          <div class="swiper-slide">
+            <div class="video-wrapper">
+              <video controls>
+                <source src="/images/performances/RemediParentsBday.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <p class="caption">A Mother’s Day Tribute</p>
+          </div>
+
+          <!-- Slide 3: Free Yo Mind third -->
+          <div class="swiper-slide">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/oELUIO3nIO8"
+                title="Free Yo Mind"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="caption">“Free Yo Mind — Out Now!”</p>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Awards & Press -->
+<!-- Awards & Press -->
+<section id="awards-press" class="target-section">
+  <div class="row">
+    <!-- Left: 2-column grid of awards -->
+    <div class="column xl-6">
+      <div class="section-header" data-num="02">
+        <h2 class="text-display-title">Awards & Press</h2>
+      </div>
+      <ul class="grid-list-items award-list">
+        <!-- 1️⃣ Best Original Song first -->
+        <li class="grid-list-items__item">
+          <img src="/images/awardThree.png"
+               alt="Best Original Song Award"
+               class="award-thumb">
+          <p class="caption">
+             Best Original Song – “Free Yo Mind” (Las Vegas BFF 2025), with Remedi front-and-center
+          </p>
+        </li>
+        <!-- 2️⃣ Remedi × Teshi next -->
+        <li class="grid-list-items__item">
+          <img src="/images/awardOne.jpg"
+               alt="Remedi & Teshi with Ms. Michele"
+               class="award-thumb">
+          <p class="caption">
+            Remedi × Teshi with Ms. Michele (founder of the LVBFF)
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right: venues -->
+    <div class="column xl-6">
+      <div class="section-header" data-num="03">
+        <h2 class="text-display-title">Notable Venues</h2>
+      </div>
+      <ul class="link-list venues-list">
+        <li>Area15</li>
+        <li>Las Vegas Black Film Festival</li>
+        <li>The Usual Place</li>
+        <li>Ninja Karaoke</li>
+        <li>Downtown Music Hall</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Photo Gallery -->
+    <!-- Moments On Stage -->
+    <!-- Moments On Stage -->
+    <section id="moments-on-stage" class="target-section">
+      <div class="row">
+        <div class="column xl-12">
+
+          <!-- Section header -->
+          <div class="section-header" data-num="04">
+            <h2 class="text-display-title">Moments On Stage</h2>
+          </div>
+
+          <!-- Video + Info -->
+          <div class="moments-on-stage__video">
+            <h3 id="perf-title" class="moments-on-stage__title"></h3>
+            <p id="perf-meta" class="moments-on-stage__meta"></p>
+            <video
+              id="perf-video"
+              controls
+              loop
+              poster=""
+            >
+              <source id="perf-source" src="" type="video/mp4" />
+              Your browser doesn’t support HTML5 video.
+            </video>
+          </div>
+
+          <!-- Thumbnails / Buttons -->
+      <ul class="moments-tabs">
+        <li data-index="0" class="active">Crashout Live</li>
+        <li data-index="1">Area15 Live</li>
+        <li data-index="2">Mother’s Day Tribute</li>
+        <li data-index="3">Gala Performance</li>
+      </ul>
+
+
+        </div>
+      </div>
+    </section>
+
+  <!-- Booking CTA -->
+  <section id="book-callout" class="s-numbers target-section">
+    <div class="row">
+      <div class="column xl-8">
+        <h3 class="text-display-title">Ready to Book Remedi?</h3>
+        <p>Bring unforgettable energy to your event—let’s make magic together.</p>
+      </div>
+      <div class="column xl-4">
+        <a href="#footer" class="btn btn--primary btn--large">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+<section id="special-set" class="target-section s-special-set">
+  <div class="row">
+    <div class="column xl-12">
+
+      <!-- Header -->
+      <div class="section-header" data-num="05">
+        <h2 class="text-display-title">Featured <br>Performance</h2>
+        <p class="section-desc">
+          Featured Show: Ninja Karaoke 
+          • March 16, 2025
+        </p>
+      </div>
+
+      <!-- Video + Info -->
+      <div class="special-video-wrapper">
+        <h3 id="set-title" class="moments-on-stage__title"></h3>
+        <p id="set-meta" class="moments-on-stage__meta"></p>
+        <video id="set-video" controls loop poster="">
+          <source id="set-source" src="" type="video/mp4" />
+          Your browser doesn’t support HTML5 video.
+        </video>
+      </div>
+
+      <!-- Tabs -->
+      <ul class="special-tabs">
+        <li data-index="0" class="active">Backstage Beats</li>
+        <li data-index="1">Live @ Ninja Karaoke</li>
+        <li data-index="2">Closing Sparks</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- # footer 
+        ================================================== -->
+       <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">
+<p>
+  Remedy makes music for the soul.  
+  More behind-the-scenes, lyrics, and love on  
+  <a href="https://www.instagram.com/Therawremedi_/" target="_blank" rel="noopener">
+    Instagram
+  </a>.
+</p>
+                    </p>               
+                </div>
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="https://www.instagram.com/Therawremedi_/">Instagram</a></li>
+                                <li><a href="#">More Soon!</a></li>
+                          
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="#">remediofficial@gmail.com</a></li>
+                                <li><a href="#">+719 838 4002</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+
+            <div class="row s-footer__buttons">
+                <div class="column xl-6 tab-12">
+                    <a
+  href="https://www.instagram.com/Therawremedi_/"
+  class="btn btn--primary btn--large u-fullwidth"
+  target="_blank"
+  rel="noopener noreferrer"
+>Message Me</a>
+                </div>
+                <div class="column xl-6 tab-12">                    
+                    <a href="/performance.html" class="btn btn--stroke btn--large u-fullwidth">See My Work</a>
+                </div>
+            </div>
+            
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <li>
+                                <!-- <a href="https://www.instagram.com/Therawremedi_/" target="_blank" rel="noopener">
+                                    <img src="https://i.pinimg.com/736x/63/82/28/6382286cf8116913e8c31e2a76c179f0.jpg" 
+                                        alt="Instagram" width="24" height="24" style="border-radius: 6px;">
+                                    <span class="u-screen-reader-text">Instagram</span>
+                                </a> -->
+                                </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                         style="fill: rgba(0, 0, 0, 1);">
+                        <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path>
+                    </svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div>
+<p class="footer-credit">© 2025 Remedy. All rights reserved.</p>
+
+        </footer> 
+
+  <!-- your existing JS + Swiper init -->
+  <script defer src="js/script.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- 1) Swiper init with pause/reset on slide change -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('#video-highlights .highlights-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+    centeredSlides: true,
+
+    navigation: {
+      nextEl: '#video-highlights .swiper-button-next',
+      prevEl: '#video-highlights .swiper-button-prev',
+    },
+    pagination: {
+      el: '#video-highlights .swiper-pagination',
+      clickable: true,
+    },
+
+    on: {
+      slideChangeTransitionStart() {
+        // pause/reset all HTML5 videos
+        document.querySelectorAll('#video-highlights video').forEach(v => {
+          v.pause();
+          v.currentTime = 0;
+        });
+        // reload all iframes to stop embeds
+        document.querySelectorAll('#video-highlights iframe').forEach(iframe => {
+          const src = iframe.src;
+          iframe.src = src;
+        });
+      }
+    }
+  });
+});
+</script>
+
+<!-- 2) “Moments On Stage” carousel -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const performances = [
+    {
+      src:    'images/performances/crashout.MP4',
+      poster: 'images/performances/crashout-poster.jpg',
+      title:  'Remedi “Crashout” Distro Performance 6/18',
+      meta:   'Remedi • June 18th'
+    },
+    {
+      src:    'images/performances/area15.MP4',
+      poster: 'images/performances/area15-poster.jpg',
+      title:  'Remedi Live at Area15',
+      meta:   'Remedi • May 4th'
+    },
+    {
+      src:    'images/performances/RemediParentsBday.MP4',
+      poster: 'images/performances/RemediParentsBday-poster.jpg',
+      title:  'Tribute to Mom — Mother’s Day',
+      meta:   'Remedi • May 26th'
+    },
+    {
+      src:    'images/performances/uncMorrisGala.MP4',
+      poster: 'images/performances/uncMorrisGala-poster.jpg',
+      title:  'Remedi at the Morris Gala',
+      meta:   'Remedi • May 26th'
+    }
+  ];
+
+  const video   = document.getElementById('perf-video');
+  const source  = document.getElementById('perf-source');
+  const titleEl = document.getElementById('perf-title');
+  const metaEl  = document.getElementById('perf-meta');
+  const tabs    = Array.from(document.querySelectorAll('.moments-tabs li'));
+
+  function loadPerformance(i) {
+    const p = performances[i];
+    source.src     = p.src;
+    video.poster   = p.poster;
+    titleEl.textContent = p.title;
+    metaEl.textContent  = p.meta;
+    video.load();
+    tabs.forEach(tab =>
+      tab.classList.toggle('active', Number(tab.dataset.index) === i)
+    );
+  }
+
+  tabs.forEach(tab =>
+    tab.addEventListener('click', () => loadPerformance(Number(tab.dataset.index)))
+  );
+
+  loadPerformance(0);
+});
+</script>
+
+<!-- 3) “Special Performance Set” carousel -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const specialPerformances = [
+    {
+      src:    '/images/performances/ninjaOne.MP4',
+      poster: 'images/performances/setIntro-poster.jpg',
+      title:  'Remedi: Live at Ninja Karaoke',
+      meta:   'Closing out with sparks and soul.'
+    },
+    {
+      src:    '/images/performances/ninjaTwo.MP4',
+      poster: 'images/performances/soulFlow-poster.jpg',
+      title:  'Midnight Meltdown',
+      meta:   'Live in Vegas'
+    },
+    {
+      src:    '/images/performances/distro.MP4',
+      poster: 'images/performances/encore-poster.jpg',
+      title:  'Rhythm & Remedy',
+      meta:   'Healing hearts one verse at a time.'
+    }
+  ];
+
+  const video   = document.getElementById('set-video');
+  const source  = document.getElementById('set-source');
+  const titleEl = document.getElementById('set-title');
+  const metaEl  = document.getElementById('set-meta');
+  const tabs    = Array.from(document.querySelectorAll('.special-tabs li'));
+
+  function loadSpecial(i) {
+    const p = specialPerformances[i];
+    source.src          = p.src;
+    video.poster        = p.poster;
+    titleEl.textContent = p.title;
+    metaEl.textContent  = p.meta;
+
+    video.load();
+
+    tabs.forEach(tab =>
+      tab.classList.toggle('active', Number(tab.dataset.index) === i)
+    );
+  }
+
+  tabs.forEach(tab =>
+    tab.addEventListener('click', () => loadSpecial(Number(tab.dataset.index)))
+  );
+
+  // initialize
+  loadSpecial(0);
+});
+</script>
+
+
+
+<!-- 4) Smooth-anchor scrolling -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+<!-- at bottom of body, after your other <script>… -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const specialImages = [
+    {
+      src:    '/images/performances/ninjaOne.MP4',
+      alt:    'Remedi: Special Set Intro',
+      title:  'Remedi: Special Set Intro',
+      meta:   'Live in Vegas'
+    },
+    {
+      src:    '/images/performances/ninjaTwo.MP4',
+      alt:    'Remedi Performs Soul Flow',
+      title:  'Soul Flow Groove',
+      meta:   'Special Encore'
+    },
+    {
+      src:    '/images/performances/distro.MP4',
+      alt:    'Encore Vibes to Close Out the Night',
+      title:  'Encore Vibes to Close Out the Night',
+      meta:   'Final Track'
+    }
+  ];
+
+  const img     = document.getElementById('set-image');
+  const titleEl = document.getElementById('set-title');
+  const metaEl  = document.getElementById('set-meta');
+  const tabs    = Array.from(document.querySelectorAll('.special-tabs li'));
+
+  function loadSpecial(i) {
+    const p = specialImages[i];
+    img.src    = p.src;
+    img.alt    = p.alt;
+    titleEl.textContent = p.title;
+    metaEl.textContent  = p.meta;
+    tabs.forEach(tab =>
+      tab.classList.toggle('active', Number(tab.dataset.index) === i)
+    );
+  }
+
+  tabs.forEach(tab =>
+    tab.addEventListener('click', () => loadSpecial(Number(tab.dataset.index)))
+  );
+
+  loadSpecial(0);
+});
+</script>
