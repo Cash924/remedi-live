@@ -389,25 +389,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const performances = [
     {
       src:    'performances/crashout.MP4',
-      poster: 'performances/crashout-poster.jpg',
+      poster: '',
       title:  'Remedi “Crashout” Distro Performance 6/18',
       meta:   'Remedi • June 18th'
     },
     {
       src:    'performances/area15.MP4',
-      poster: 'performances/area15-poster.jpg',
+      poster: '',
       title:  'Remedi Live at Area15',
       meta:   'Remedi • May 4th'
     },
     {
       src:    'performances/RemediParentsBday.MP4',
-      poster: 'performances/RemediParentsBday-poster.jpg',
+      poster: '',
       title:  'Tribute to Mom — Mother’s Day',
       meta:   'Remedi • May 26th'
     },
     {
       src:    'performances/uncMorrisGala.MP4',
-      poster: 'performances/uncMorrisGala-poster.jpg',
+      poster: '',
       title:  'Remedi at the Morris Gala',
       meta:   'Remedi • May 26th'
     }
@@ -420,16 +420,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabs    = Array.from(document.querySelectorAll('.moments-tabs li'));
 
   function loadPerformance(i) {
-    const p = performances[i];
-    source.src     = p.src;
-    video.poster   = p.poster;
-    titleEl.textContent = p.title;
-    metaEl.textContent  = p.meta;
-    video.load();
-    tabs.forEach(tab =>
-      tab.classList.toggle('active', Number(tab.dataset.index) === i)
-    );
+  const p = performances[i];
+
+  // always update the video source
+  source.src = p.src;
+
+  // only set a poster if we have one; else remove any existing poster
+  if (p.poster) {
+    video.poster = p.poster;
+  } else {
+    video.removeAttribute('poster');
   }
+
+  // update title & meta
+  titleEl.textContent = p.title;
+  metaEl.textContent  = p.meta;
+
+  // reload the video element
+  video.load();
+
+  // highlight the active tab
+  tabs.forEach(tab =>
+    tab.classList.toggle('active', Number(tab.dataset.index) === i)
+  );
+}
+
 
   tabs.forEach(tab =>
     tab.addEventListener('click', () => loadPerformance(Number(tab.dataset.index)))
@@ -445,19 +460,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const specialPerformances = [
     {
       src:    'performances/ninjaOne.MP4',
-      poster: 'performances/setIntro-poster.jpg',
+      poster: '',
       title:  'Remedi: Live at Ninja Karaoke',
       meta:   'Closing out with sparks and soul.'
     },
     {
       src:    'performances/ninjaTwo.MP4',
-      poster: 'performances/soulFlow-poster.jpg',
+      poster: '',
       title:  'Midnight Meltdown',
       meta:   'Live in Vegas'
     },
     {
       src:    'performances/distro.MP4',
-      poster: 'performances/encore-poster.jpg',
+      poster: '',
       title:  'Rhythm & Remedy',
       meta:   'Healing hearts one verse at a time.'
     }
