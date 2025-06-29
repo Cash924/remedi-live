@@ -5010,3 +5010,52 @@ html {
 .overview-list li:last-child {
   border-bottom: none;
 }
+/* —————————————————————
+   ABOUT SECTION TYPOGRAPHY
+   ————————————————————— */
+#about .section-header h2 {
+  /* keep your fluid headline here if you like, or fix at 5rem: */
+  font-size: clamp(4rem, 6vw, 5rem);
+  line-height: 1.15;
+}
+
+#about .attention-getter {
+  /* larger body text that scales */
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+  line-height: 1.6;
+
+  /* narrow it to ~60 characters, flush left */
+  max-width: 138ch;
+  margin: 1.5rem auto 2rem 0;
+}
+/* space above/below the highlights block */
+#highlights {
+  padding: 3rem 0;
+}
+/* make sure it sits nicely in its new spot */
+.s-about__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 4rem auto;       /* add top/bottom space */
+  max-width: 1200px;       /* constrain width to match your layout */
+  padding: 0 1rem;         /* small horizontal gutter */
+  gap: 2rem;               /* space between columns */
+}
+
+/* each column takes 1/3 of the row */
+.s-about__blocks .s-about__block {
+  flex: 1 1 30%;
+}
+
+/* stack on narrow screens */
+@media (max-width: 768px) {
+  .s-about__blocks {
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 3rem;
+  }
+  .s-about__blocks .s-about__block {
+    flex: 1 1 auto;
+  }
+}
