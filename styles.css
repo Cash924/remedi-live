@@ -4113,10 +4113,35 @@ td:last-child {
 
 .s-testimonials__slider .swiper-wrapper,
 .s-testimonials__slider .swiper-slide {
-  display     : flex;
-  align-items : stretch;
+  display: flex;
+  align-items: stretch;
   justify-content: center;
 }
+
+.s-testimonials__slider .swiper-slide {
+  padding: 1.5rem; /* Ensures breathing room */
+}
+
+.s-testimonials__slider .swiper-slide p {
+  font-size: 1.5rem; /* Increased to ~24px */
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 80%;
+  text-align: center;
+  margin-top: 0.75rem; /* Adds separation from username */
+  position: relative;
+}
+
+/* Optional: slightly darker quotes for readability */
+.s-testimonials__slider .swiper-slide p::before,
+.s-testimonials__slider .swiper-slide p::after {
+  content: '"';
+  font-size: 1.75rem;
+  color: #555;
+  margin: 0 0.25rem;
+}
+
+
 
 
 /* ------------------------------------------------------------
@@ -4852,10 +4877,6 @@ td:last-child {
   align-items: stretch; /* makes all slides same height */
 }
 
-.s-testimonials__slider .swiper-slide {
-  display: flex;
-  align-items: stretch; /* needed to stretch cards vertically */
-}
 .s-testimonials__slider {
   overflow: visible;
 }
@@ -5058,4 +5079,68 @@ html {
   .s-about__blocks .s-about__block {
     flex: 1 1 auto;
   }
+}
+.s-testimonials__slide {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 420px;
+  width: 90%;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.s-testimonials__slide:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.s-testimonials__avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #f6d365;
+}
+
+.s-testimonials__cite strong {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.s-testimonials__cite span {
+  display: block;
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.s-testimonials__slide p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: #444;
+}
+body {
+  background-color: #787878; /* or your chosen grey */
+}
+/* Absolute centering using table-cell method for footer Message Me button */
+.s-footer__buttons .btn--primary {
+  display: table !important;
+  width: 100% !important;
+  height: auto !important;
+  text-align: center !important;
+}
+
+.s-footer__buttons .btn--primary span,
+.s-footer__buttons .btn--primary a {
+  display: table-cell !important;
+  vertical-align: middle !important;
 }

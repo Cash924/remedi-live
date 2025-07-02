@@ -48,30 +48,33 @@ async function loadYouTubeTestimonials() {
       wrapper.appendChild(slide);
     });
 
-    if (!testimonialsSwiper) {
-     testimonialsSwiper = new Swiper('.s-testimonials__slider', {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
-  loopedSlides: 5, // should match or be less than your real slides
-  speed: 600,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  if (!testimonialsSwiper) {
+  testimonialsSwiper = new Swiper('.s-testimonials__slider', {
+   loop: true,
+speed: 600,
+spaceBetween: 32,
+slidesPerView: 1.1,
+centeredSlides: true,
+loopedSlides: 5,
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+breakpoints: {
+  0: {
+    slidesPerView: 1,
+    spaceBetween: 20,
   },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 2.5,
-    }
+  640: {
+    slidesPerView: 1.3,
+    spaceBetween: 25,
+  },
+  1024: {
+    slidesPerView: 2,
+    spaceBetween: 32,
   }
-});
-
+}
+  }); // <-- closing Swiper constructor
     } else {
       testimonialsSwiper.update();
     }
