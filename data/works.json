@@ -5,11 +5,11 @@
     "category": "Performance Highlights",
     "songUrl": "https://youtu.be/PLACEHOLDER1"
   },
-  {
-    "thumb": "images/mainPicTwo.jpeg",
-    "title": "Area15 Set",
-    "category": "Performance Highlights",
-    "songUrl": "https://youtu.be/PLACEHOLDER2"
+   {
+    "thumb": "images/mainPicFive.JPG",
+    "title": "Festival Headliner",
+    "category": "Festival Appearances",
+    "songUrl": "https://youtu.be/PLACEHOLDER5"
   },
   {
     "thumb": "images/mainPicThree.jpeg",
@@ -24,16 +24,10 @@
     "songUrl": "https://youtu.be/PLACEHOLDER4"
   },
   {
-    "thumb": "images/mainPicFive.JPG",
-    "title": "Festival Headliner",
-    "category": "Festival Appearances",
-    "songUrl": "https://youtu.be/PLACEHOLDER5"
-  },
-  {
-    "thumb": "images/mainPicSix.JPG",
-    "title": "Charity Gala",
-    "category": "Charity & Fundraisers",
-    "songUrl": "https://youtu.be/PLACEHOLDER6"
+    "thumb": "images/mainPicEight.JPG",
+    "title": "Downtown Music Hall",
+    "category": "Notable Venues",
+    "songUrl": "https://youtu.be/PLACEHOLDER8"
   },
   {
     "thumb": "images/mainPicSeven.JPG",
@@ -41,10 +35,10 @@
     "category": "Studio Sessions",
     "songUrl": "https://youtu.be/PLACEHOLDER7"
   },
-  {
-    "thumb": "images/mainPicEight.JPG",
-    "title": "Downtown Music Hall",
-    "category": "Notable Venues",
-    "songUrl": "https://youtu.be/PLACEHOLDER8"
+    {
+    "thumb": "images/mainPicSix.JPG",
+    "title": "Charity Gala",
+    "category": "Charity & Fundraisers",
+    "songUrl": "https://youtu.be/PLACEHOLDER6"
   }
 ]
