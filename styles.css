@@ -5244,3 +5244,116 @@ body {
   content: "📍";
   font-size: 1.3rem;
 }
+/* Highlight Section Enhancements */
+
+#highlight-preview {
+  background-color: #f9f9f9; /* soft tint background */
+  padding: 4rem 0;
+}
+
+#highlight-preview .section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#highlight-preview .section-header .text-display-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+#highlight-preview .section-subtitle {
+  font-size: 1.125rem;
+  color: #888;
+  margin: 0.5rem 0 1rem;
+  font-style: italic;
+}
+
+#highlight-preview .highlight-divider {
+  width: 60px;
+  border: 1px solid #ddd;
+  margin: 0 auto 2rem auto;
+}
+
+#highlight-preview .highlight-video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#highlight-preview .highlight-video {
+  border-radius: 8px;
+}
+
+#highlight-preview .highlight-caption {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#highlight-preview .s-highlight-preview__btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn--highlight {
+  padding: 0.75rem 2rem;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+}
+
+.btn--highlight:hover {
+  background-color: #000;
+  color: #fff;
+}
+#highlight-preview {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+#highlight-preview .section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#highlight-preview .text-display-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-divider {
+  width: 60px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+#highlight-preview .highlight-video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#highlight-preview .highlight-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+}
+
+#highlight-preview .s-highlight-preview__btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+#highlight-preview .text-display-title {
+  font-size: 2.75rem; /* Bigger than before */
+  font-weight: 800;   /* Extra bold for strong presence */
+  letter-spacing: -0.5px; /* Tighter look */
+  margin-bottom: 0.5rem;
+}
